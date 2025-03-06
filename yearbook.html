@@ -1,0 +1,436 @@
+<!-- File: yearbook.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yearbook - Kenangan SMA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, rgb(253,240,213), rgb(253,250,220));
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, rgb(120, 0, 0), rgb(193, 18, 31));
+            color: rgb( 253, 240, 213);
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-shadow: 8px 8px 5px #333;
+        }
+
+        
+    .animated {
+      font-size: 3em;           /* Ukuran font */
+      font-weight: bold;       /* Ketebalan tulisan */
+      text-align: center;      /* Rata tengah */
+      margin-top: 20px;        /* Spasi dari atas */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Jenis font */
+      color: rgb( 253, 240, 213);          /* Warna dasar tulisan */
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 5px rgb( 253, 240, 213);
+            transform: scale(1);
+        }
+        100%{
+            text-shadow: 0 0 20px rgb(120, 0, 0);
+        }
+        
+    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(120, 0, 0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            text-shadow: 1px 5px 5px #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: rgb(117, 1, 1);
+
+            animation: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            border-radius: 50px;
+            transition-delay: 0.3s;
+            transform: scale(1.1);
+        }
+
+        .judul {
+            text-shadow: 1px 5px 9px rgb( 253, 240, 213);
+            margin-top: 3px;
+            margin-bottom: 30px;            
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer {
+            background: linear-gradient(to right, rgb(120, 0, 0), rgb(193, 18, 31));
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 3px 4px 9px #333;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .profile:hover {
+            transform: scale(1.02);
+
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 2px solid #ddd;
+        }
+        .profile-content {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+            .animated {
+                font-size: 2rem;
+            }
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animated">The Yearbook!</h1>
+   
+    <nav>
+        <a href="USAMANDA.html">Beranda</a>
+        <a href="yearbook.html">Yearbook</a>
+        <a href="photo.html">Foto</a>
+        <a href="about.html">About</a>
+        <a href="webbuilder.html">Website Builder</a>
+    </nav>
+</header>
+    <div class="container">
+        <h2 class="judul">USAMANDA FAMILY</h2>
+        <div class="profile">
+            <img src="messi.jpg" alt="Foto Siswa 1">
+            <div class="profile-content">
+                <h3>Abiyyu Miskal Pahlevi </h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Semoga kita semua sukses di masa depan!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 2">
+            <div class="profile-content">
+                <h3>Alif Albar Faturrahman</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> "Every step is important, So watch your step".</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Aprilivia Ananta</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Asyifa Natasya Maulidia</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Ataya Fikri Nabil Risqullah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Aulia Rohimah Safwa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Aura Latifa Al Akhfa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Azani Rachmania</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Azkiya Nur Istikomah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Dealova Ramadhany</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Delisa Nurul Latifani</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Derriel Mulya Ramadhan</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Febri Muhaimen</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Hadziqah Khairun Nisa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Keisha Farahnaz Syakira</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Khoirunnisa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Kiki Kirana Andriani</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Melly</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Menur Rachmania Zulkarnain</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Mohammad Wafi Kautsar</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Revan Nuransa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Abizan Aqsha</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Ardiansyah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Hegar Pangestu</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Raihan Faizilillah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Tajul Arifin Akbar</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Muhammad Zalfa Anugrah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Niza Salsabila</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Nouval Dwi Afif Habibi</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Raika Hollandivya Abiza</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Raisyah Fadila</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Tri Wahyu Ningsih</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Veisha Syifa Huna</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Zahratun Najwa</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Foto Siswa 3">
+            <div class="profile-content">
+                <h3>Zaldy Anugrah</h3>
+                <p><strong>Kelas:</strong> XII A</p>
+                <p><strong>Pesan:</strong> Jangan lupakan persahabatan kita!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 MAN 2 PONTIANAK 2025/2026
+    </footer>
+</body>
+</html>
